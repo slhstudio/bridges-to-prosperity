@@ -1,0 +1,38 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     * {
+       margin: 0; 
+       padding: 0;
+    }
+    #main {
+      width: 100%;
+      
+    }
+    .zoom-within-container {
+      height: 1655px; /* [1.1] Set it as per your need */
+      /*overflow: hidden;  [1.2] Hide the overflowing of child elements */
+    }
+    .zoom-within-container img {
+      transition: transform .5s ease;
+    }
+    .zoom-within-container:hover img{
+      transform: scale(1.5);
+      transform-origin: top left;
+    }
+   
+      
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class='zoom-within-container'>
+      <img id='main' src="./assets/final-150.png"/> 
+     
+    </div>
+  </body>
+  </html>
